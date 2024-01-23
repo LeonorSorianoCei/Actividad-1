@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Staatliches&display=swap" rel="stylesheet">
+    <title>Diego Sierra López</title>
+</head>
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    body {
+      font-family: "Staatliches", sans-serif;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #000000;
+    }
+  
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      width: 100vw;
+      color: #000000;
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    header:hover {
+  background-color: #ff0000;
+  color: white;
+}
+  
+    h2 {
+      color: #000000;
+      margin-bottom: 10px;
+      font-family: "Bungee", sans-serif;
+  font-weight: 400;
+ 
+    }
+  
+    section {
+      background-color: #fff;
+      padding: 80px;
+      width: 80vw;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+  
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img{
+      width: 60%;
+      margin: 20px;
+    }
+
+    .ejemplos {
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+    }
+
+    .lista-redes{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .ejemplos:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+
+
+.iframe-container {
+    overflow: hidden;
+    padding: 50% 0 0;
+    position: relative;
+}
+
+
+.iframe-container iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+
+
+.experiencia-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.experiencia-lista li {
+  margin-bottom: 20px;
+}
+
+.experiencia-lista h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.experiencia-lista p {
+  font-size: 14px;
+}
+
+.formacion{
+  letter-spacing: 0;
+  transition: letter-spacing 0.3s ease;
+}
+
+.formacion:hover{
+  background-image: url("img/codigo.jpg");
+  background-size: cover;
+  font-weight: 800;
+  letter-spacing: 10px;
+}
+
+.imagen-de-experiencia{
+  display: none;
+}
+
+button{
+  background-color: rgb(70, 70, 70);
+  color: white;
+  font-size: 16px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: monospace;
+}
+
+
+    
+
+    
+  </style>
+  
+  
+  
+    <header>
+        <h1>Diego Sierra López</h1>
+      </header>
+    
+      <section class="sobre-mi">
+        <h2>Sobre mí</h2>
+        <div class="icono-diego">
+          <img src="icons/gif.gif" alt="gif">
+        </div>
+        <p class="descripcion">¡Hola! Mi nombre es Diego Sierra López y tengo 23 años.</p>
+        <p class="descripcion">He estudiado Sistemas de la información y tengo experiencia como Desarrollador PHP.</p>
+      </section>
+
+      <section class="formacion">
+        <h2>Formación</h2>
+        <p class="estudios">Estudios: Sistemas de la información</p>
+        <div class="herramientas"><p>Herramientas: Java, Python, C, Tailwind</p>
+
+        </div>
+      </section>
+    
+      <section class="experiencia">
+        <div class="experiencia-contenido">
+          <h2>Experiencia</h2>
+          <ul class="experiencia-lista">
+            <li>
+              <h3>Hostelería</h3>
+              <p>Camping la Paz, Llanes, Asturias</p>
+            </li>
+            <li>
+              <h3>Recepcionista</h3>
+              <p>Camping la Paz, Llanes, Asturias</p>
+            </li>
+            <li>
+              <h3>Desarrollador PHP</h3>
+              <p>Adams, Madrid</p>
+            </li>
+          </ul>
+          <button class="boton-ver-imagen">Ver imagen</button>
+      </div>
+      <div class="imagen-de-experiencia"><img src="img/experiencia.jpg" alt="imagen de experiencia"></div>
+      </section>
+    
+      <section class="aficiones">
+        <h2>Aficiones</h2>
+        <div class="ejemplos">
+          <div>
+            <p>Fútbol</p>
+            <img src="icons/futbol.png" alt="futbol">
+          </div>
+          <div>
+            <p>Skate</p>
+            <img src="icons/skate.png" alt="skate">
+          </div>
+          <div>
+            <p>Montaña</p>
+            <img src="icons/montana.png" alt="montaña">
+          </div>
+      </div>
+      </section>
+      
+
+      <section class="proyectos">
+        <h2>proyectos</h2>
+        <div class="iframe-container">
+          <iframe width="560" height="315" src="https://lolamazi.com/#"
+              title="lolamazi.com"
+              alt="lolamazi.com" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen loading="lazy"></iframe>
+      </section>
+    
+      <section class="redes-sociales">
+        <h2>Puedes encontrarme en las siguientes redes sociales</h2>
+        <ul class="lista-redes">
+          <li><a href="https://www.instagram.com/" target="_blank"><img src="icons/instagram.svg" alt="Instagram"></a></li>
+          <li><a href="https://www.facebook.com/?locale=es_ES" target="_blank"><img src="icons/facebook.svg" alt="facebook"></a></li>
+          <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="icons/twitter.svg" alt="twitter"></a></li>
+        </ul>
+      </section>
+
+
+
+      <script>
+
+const boton = document.querySelector('.boton-ver-imagen');
+const experienciaContenido = document.querySelector(".experiencia-contenido");
+const experienciaImagen = document.querySelector(".imagen-de-experiencia");
+
+
+        boton.addEventListener('click', function() {
+  experienciaContenido.style.display = 'none'; 
+  experienciaImagen.style.display = 'block'; 
+        })
+
+        
+      </script>
+</body>
+</html>
